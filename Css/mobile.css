@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap');
+
+
+body{
+    font-family: 'Josefin Sans', sans-serif !important;
+    background: url('/Images/bg-mobile-light.jpg') no-repeat;
+    background-size: 100% 50%;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 98%) !important;
+    /* margin: 0 !important; */
+    padding: 10px !important;
+
+}
+
+.main{
+    width: 400px !important;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.mode-icon {
+    justify-content: flex-end;
+    font-size: 20px;
+    padding-top: 3px;
+}
+
+.header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.clear i{
+    font-size: 30px;
+    color: #FFF;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+
+.content{
+    height: 335px;
+    background-color: #FFF;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.center {
+    box-shadow: 3px 5px 5px #cacacab4;
+
+}
+
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+.content ul{
+    padding:0;
+    margin:0;
+}
+.item{
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+    color: hsl(236, 33%, 92%);
+}
+.item i.co:hover{
+    cursor: pointer;
+    color: hsl(280, 87%, 65%);
+}
+.fa-check-circle::after{
+    color: white;
+    content: "\2714";
+    padding: 8px 6px 4px 6px;
+    position: absolute;
+    left: 4px;
+    bottom: 1px;
+    background-image: linear-gradient(hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+    border-radius: 60%;
+    font-size: 12px;
+    
+}
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 15px;
+    left:60px;
+    top:12px;
+    max-width:285px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+    opacity: 0.8;
+}
+.item i.de{
+    position: absolute;
+    font-size: 17px;
+    right:15px;
+    top:15px;
+    color: hsl(236, 33%, 92%);
+}
+.item i.de:hover{
+    cursor: pointer;
+}
+
+.add-to-do{
+    position: relative;
+    height:50px;
+    background-color: #FFF;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+.add-to-do i{
+    position: absolute;
+    font-size: 17px;
+    color: hsl(236, 33%, 92%);
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:12px;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    top: 9px;
+    height: 35px;
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    padding-left:10px;
+    outline: none;
+
+}
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: hsl(236, 9%, 61%);
+    font-size: 17px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: hsl(236, 9%, 61%);
+    font-size: 17px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: hsl(236, 9%, 61%);
+    font-size: 17px;
+}
+.add-to-do input:-moz-placeholder { /* Firefox 18- */
+    color: hsl(236, 9%, 61%);
+    font-size: 17px;
+}
+
+.filterList {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: hsl(236, 9%, 61%);
+    margin: 0 20px;
+    padding-top: 12px;
+}
+
+
+.nav-pills {
+    margin-top: -8px !important;
+    margin-left: -25px !important;
+    margin-right: -25px !important;
+}
+
+.nav-pills li {
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+}
+
+.nav-pills .active {
+    background-color: transparent !important;
+    color: hsl(220, 98%, 61%) !important;
+}
+.nav-pills a {
+    color: hsl(236, 9%, 61%) !important;
+}
+a:hover {
+    color: hsl(235, 19%, 35%) !important;
+    text-decoration: none !important;
+}
+
+.clear {
+    color: hsl(236, 9%, 61%);
+}
+
+.dark {
+    background-color: aqua;
+}
+
+.dark-img{
+    background: url('/Images/bg-mobile-dark.jpg') no-repeat;
+    background-size: 100% 50%;
+    background-color: hsl(235, 21%, 11%) !important;
+}
+
+.daymode {
+    display: none;
+}
+
+.dark-background {
+    background-color: hsl(237, 14%, 26%) !important;
+    
+}
+.night-shadow{
+    box-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+.item-in-dark li {
+    color: hsl(0, 0%, 98%);
+}
+
+.input-colorist {
+    color: hsl(0, 0%, 98%);
+}
+
+.header i:hover{
+    cursor: pointer;
+}
